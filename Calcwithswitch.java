@@ -5,22 +5,22 @@ public class Calcwithswitch {
 	public static void add(int a,int b)
 	{
 		int c=a+b;
-		System.out.println("Addition of the given no is-->"+c);	
+		System.out.println("Addition of the given no's is-->"+c);	
 	}
 	public static void sub(int a,int b)
 	{
 		int c=a-b;
-		System.out.println("Substraction of the given no is-->"+c);	
+		System.out.println("Substraction of the given no's is-->"+c);	
 	}
 	public static void mul(int a,int b)
 	{
 		int c=a*b;
-		System.out.println("Multiplication of the given no is-->"+c);	
+		System.out.println("Multiplication of the given no's is-->"+c);	
 	}
 	public static void div(int a,int b)
 	{
 		int c=a/b;
-		System.out.println("Division of the given no is-->"+c);	
+		System.out.println("Division of the given no's is-->"+c);	
 	}
 	
 	
@@ -32,10 +32,12 @@ public class Calcwithswitch {
 		System.out.println("1)Addition\n2)Substraction\n3)Multiplication\n4)Division");
 		System.out.println("\nenter your choice");
 		choice=sc.next().charAt(0);
-		System.out.println("enter 1st no");
-		int n1=sc.nextInt();
-		System.out.println("enter 2nd no");
-		int n2=sc.nextInt();
+		int n1=Integer.parseInt(args[0]);
+		int n2=Integer.parseInt(args[1]);
+		
+		System.out.println("The 1st no is"+n1);
+		System.out.println("The 2nd no is"+n2);
+		
 		switch(choice)
 		{
 		case '1':
